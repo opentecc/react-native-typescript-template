@@ -7,17 +7,21 @@
  *
  * @format
  */
-
 import React from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import Navigation from './navigation';
-import useColorScheme from './hooks/useColorScheme';
+import {Provider as ReduxProvider} from 'react-redux';
+import {store} from './redux/store';
+import ThemeProvider from './theme';
 const App = () => {
-  const colorScheme = useColorScheme();
   return (
-    <SafeAreaProvider>
-      <Navigation colorScheme={colorScheme} />
-    </SafeAreaProvider>
+    <ThemeProvider>
+      <ReduxProvider store={store}>
+        <SafeAreaProvider>
+          <Navigation />
+        </SafeAreaProvider>
+      </ReduxProvider>
+    </ThemeProvider>
   );
 };
 
