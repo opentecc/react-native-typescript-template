@@ -44,8 +44,10 @@
 		24C61297290BDD12002BAF14 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C61278290BDD12002BAF14 /* SimpleLineIcons.ttf */; };
 		24C61298290BDD12002BAF14 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C61279290BDD12002BAF14 /* MaterialIcons.ttf */; };
 		24C61299290BDD12002BAF14 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C61279290BDD12002BAF14 /* MaterialIcons.ttf */; };
+		57B90D021EE072569782B594 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B123F672DB8D0247A47E21E /* ExpoModulesProvider.swift */; };
 		7699B88040F8A987B510C191 /* libPods-ReMirage-ReMirageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReMirage-ReMirageTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		94FCAE799E836ADE9BF35673 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A522CE5C79B1DF9DD720416 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,12 +87,14 @@
 		24C61277290BDD12002BAF14 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		24C61278290BDD12002BAF14 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		24C61279290BDD12002BAF14 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		3B123F672DB8D0247A47E21E /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ReMirage/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ReMirage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMirage.debug.xcconfig"; path = "Target Support Files/Pods-ReMirage/Pods-ReMirage.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReMirage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMirage.release.xcconfig"; path = "Target Support Files/Pods-ReMirage/Pods-ReMirage.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ReMirage-ReMirageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMirage-ReMirageTests.debug.xcconfig"; path = "Target Support Files/Pods-ReMirage-ReMirageTests/Pods-ReMirage-ReMirageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReMirage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReMirage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReMirage/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ReMirage-ReMirageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMirage-ReMirageTests.release.xcconfig"; path = "Target Support Files/Pods-ReMirage-ReMirageTests/Pods-ReMirage-ReMirageTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A522CE5C79B1DF9DD720416 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ReMirage-ReMirageTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -129,6 +133,14 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F34F3FD3D9682F5DA908D8F /* ReMirage */ = {
+			isa = PBXGroup;
+			children = (
+				3B123F672DB8D0247A47E21E /* ExpoModulesProvider.swift */,
+			);
+			name = ReMirage;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* ReMirage */ = {
@@ -177,6 +189,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6B583260E35A6F4543A7014A /* ReMirageTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A522CE5C79B1DF9DD720416 /* ExpoModulesProvider.swift */,
+			);
+			name = ReMirageTests;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +214,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				EE086D58DD784F28525E123F /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -218,6 +239,15 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-ReMirage-ReMirageTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE086D58DD784F28525E123F /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				0F34F3FD3D9682F5DA908D8F /* ReMirage */,
+				6B583260E35A6F4543A7014A /* ReMirageTests */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ReMirageTests.m in Sources */,
+				94FCAE799E836ADE9BF35673 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +549,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				57B90D021EE072569782B594 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +575,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ReMirageTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,6 +586,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReMirage.app/ReMirage";
@@ -568,7 +601,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReMirageTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,6 +612,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReMirage.app/ReMirage";
@@ -604,6 +638,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remirage;
 				PRODUCT_NAME = ReMirage;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -630,6 +665,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remirage;
 				PRODUCT_NAME = ReMirage;
 				SWIFT_VERSION = 5.0;
@@ -686,7 +722,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -751,7 +787,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
