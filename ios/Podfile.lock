@@ -12,6 +12,8 @@ PODS:
     - ExpoModulesCore
   - EXFont (11.0.1):
     - ExpoModulesCore
+  - EXLocalAuthentication (13.0.2):
+    - ExpoModulesCore
   - Expo (47.0.13):
     - ExpoModulesCore
   - ExpoKeepAwake (11.0.1):
@@ -438,6 +440,7 @@ DEPENDENCIES:
   - EXErrorRecovery (from `../node_modules/expo-error-recovery/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
   - EXFont (from `../node_modules/expo-font/ios`)
+  - EXLocalAuthentication (from `../node_modules/expo-local-authentication/ios`)
   - Expo (from `../node_modules/expo`)
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
@@ -539,6 +542,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-file-system/ios"
   EXFont:
     :path: "../node_modules/expo-font/ios"
+  EXLocalAuthentication:
+    :path: "../node_modules/expo-local-authentication/ios"
   Expo:
     :path: "../node_modules/expo"
   ExpoKeepAwake:
@@ -633,6 +638,7 @@ SPEC CHECKSUMS:
   EXErrorRecovery: ae43433feb0608a64dc5b1c8363b3e7769a9ea24
   EXFileSystem: 60602b6eefa6873f97172c684b7537c9760b50d6
   EXFont: 319606bfe48c33b5b5063fb0994afdc496befe80
+  EXLocalAuthentication: 78cc5a00b13745b41d16d189ab332b61a01299f9
   Expo: b9fa98bf260992312ee3c424400819fb9beadafe
   ExpoKeepAwake: 69b59d0a8d2b24de9f82759c39b3821fec030318
   ExpoModulesCore: 485dff3a59b036a33b6050c0a5aea3cf1037fdd1

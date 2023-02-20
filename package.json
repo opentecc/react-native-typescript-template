@@ -19,6 +19,7 @@
     "@reduxjs/toolkit": "^1.9.2",
     "AsyncStorage": "^0.1.5",
     "expo": "^47.0.0",
+    "expo-local-authentication": "~13.0.2",
     "native-base": "^3.4.25",
     "react": "18.1.0",
     "react-native": "0.70.4",

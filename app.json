@@ -1,4 +1,11 @@
 {
   "name": "ReMirage",
-  "displayName": "ReMirage"
+  "displayName": "ReMirage",
+  "expo": {
+    "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan barcodes on event tickets."
+      }
+    }
+  }
 }
