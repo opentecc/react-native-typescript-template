@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import {Center, Container, Heading, Text} from 'native-base';
+import { Center, Heading, Text } from 'native-base';
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+export default function Home({ navigation }: any): JSX.Element {
 
-export default function Home({navigation}: any): JSX.Element {
   return (
     <Center flex={1}>
       <Heading margin={5}>
