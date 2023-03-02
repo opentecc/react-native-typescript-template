@@ -16,17 +16,23 @@ import {
   Pressable,
 } from 'native-base';
 const Drawer = createDrawerNavigator();
-import {DrawerRouter} from '../../navigation/routes';
-import {DrawerRouterInterface} from '../../../types';
+import { DrawerRouter } from '../../navigation/routes';
+import { DrawerRouterInterface } from '../../../types';
 import CustomIcon from '../../components/Icon';
-function CustomDrawerContent({...props}: any) {
-  const {theme} = props;
+
+
+import ChatStack from '../../navigation/Stacks/ChatStack';
+import AuthStack from '../../navigation/Stacks/AuthStack';
+
+
+function CustomDrawerContent({ ...props }: any) {
+  const { theme } = props;
   const progress = useDrawerProgress();
   const translateX = Animated.interpolateNode(progress, {
     inputRange: [0, 1],
     outputRange: [-100, 0],
   });
-  function DrawerGroup({name, children}: DrawerRouterInterface) {
+  function DrawerGroup({ name, children }: DrawerRouterInterface) {
     return (
       <VStack margin={0}>
         <Heading margin={3} size="xs" color={theme.label}>
@@ -37,7 +43,7 @@ function CustomDrawerContent({...props}: any) {
             <DrawerItem
               inactiveTintColor={theme.label}
               key={child.path.name}
-              {...child.options({...props, theme})}
+              {...child.options({ ...props, theme })}
               activeTintColor={theme.activeTintColor}
               activeBackgroundColor={theme.activeBackgroundColor}
             />
@@ -53,7 +59,7 @@ function CustomDrawerContent({...props}: any) {
       style={{
         backgroundColor: theme.background,
       }}>
-      <Animated.View style={{transform: [{translateX}]}}>
+      <Animated.View style={{ transform: [{ translateX }] }}>
         <VStack space={2} alignItems="center">
           <Avatar
             bg="green.500"
@@ -63,7 +69,7 @@ function CustomDrawerContent({...props}: any) {
             AJ
           </Avatar>
         </VStack>
-        {DrawerRouter.map(({name, children}, index) => {
+        {DrawerRouter.map(({ name, children }, index) => {
           return (
             <DrawerGroup
               key={index}
@@ -79,7 +85,7 @@ function CustomDrawerContent({...props}: any) {
 }
 
 export default function DrawerNavigator() {
-  const {colors} = useTheme();
+  const { colors } = useTheme();
   const theme = {
     background: useColorModeValue(colors.primary[600], colors.dark[50]),
     label: useColorModeValue(colors.primary[50], colors.muted[200]),
@@ -95,7 +101,7 @@ export default function DrawerNavigator() {
   return (
     <Drawer.Navigator
       useLegacyImplementation
-      screenOptions={({navigation}) => ({
+      screenOptions={({ navigation }) => ({
         headerLeft: () => (
           <Pressable onPress={navigation.toggleDrawer}>
             <CustomIcon
@@ -115,9 +121,19 @@ export default function DrawerNavigator() {
           shadowRadius: 0,
         },
       })}
-      drawerContent={props => <CustomDrawerContent {...{...props, theme}} />}>
+      drawerContent={props => <CustomDrawerContent {...{ ...props, theme }} />}>
       <Drawer.Screen name="Root" component={BottomTabNavigator} />
-      <Drawer.Screen name="name" component={BottomTabNavigator} />
+      <Drawer.Screen
+        name="Chat"
+        component={ChatStack}
+        options={{ headerShown: false }} // override headerShown to false
+      />
+      <Drawer.Screen
+        name="Auth"
+        component={AuthStack}
+        options={{ headerShown: false }} // override headerShown to false
+      />
+
     </Drawer.Navigator>
   );
 }

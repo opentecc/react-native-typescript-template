@@ -3,16 +3,16 @@
  * https://reactnavigation.org/docs/typescript/
  */
 
-import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
+import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import {
   CompositeScreenProps,
   NavigatorScreenParams,
 } from '@react-navigation/native';
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 declare global {
   namespace ReactNavigation {
-    interface RootParamList extends RootStackParamList {}
+    interface RootParamList extends RootStackParamList { }
   }
 }
 
@@ -30,7 +30,10 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
 export type RootTabParamList = {
   Home: undefined;
   Settings: undefined;
+  Conversations: undefined;
   Login: undefined;
+  Chat: undefined;
+  Liveness: undefined
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> =
@@ -45,7 +48,7 @@ export type DrawerChildInterface = {
   options: (props: any) => {
     label: string;
     onPress: (props: RootTabScreenProps<keyof RootTabParamList>) => void;
-    icon: (props: {color: string}) => JSX.Element;
+    icon: (props: { color: string }) => JSX.Element;
   };
 };
 export type DrawerRouterInterface = {
